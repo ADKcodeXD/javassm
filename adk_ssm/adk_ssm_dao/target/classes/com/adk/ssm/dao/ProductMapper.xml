@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adk.ssm.dao.ProductMapper">
+    <select id="findAll" resultType="com.adk.ssm.domain.Product">
+        select * from product
+    </select>
+    <insert id="addProduct" parameterType="com.adk.ssm.domain.Product">
+        insert into product(id,productName,productNum,productPrice,productDesc,departureTime,cityName)
+        values (#{id},#{productName},#{productNum},#{productPrice},#{productDesc},#{departureTime},#{cityName})
+    </insert>
+</mapper>

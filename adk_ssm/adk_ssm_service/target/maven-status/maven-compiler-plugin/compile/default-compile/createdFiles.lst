@@ -1,0 +1,6 @@
+com\adk\ssm\service\IOrdersService.class
+com\adk\ssm\service\IUserService.class
+com\adk\ssm\service\ProductServiceImpl.class
+com\adk\ssm\service\IProductService.class
+com\adk\ssm\service\UserServiceImpl.class
+com\adk\ssm\service\OrderServiceImpl.class
