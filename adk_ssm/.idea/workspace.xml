@@ -36,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -44,6 +47,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1w25BbpZEy7PXIPAna1TshJK1VX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -57,11 +61,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/adk_ssm_dao/src/main/java/com/adk/ssm/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23564065" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -223,6 +227,7 @@
       <workItem from="1627790127883" duration="16809000" />
       <workItem from="1627899045269" duration="11026000" />
       <workItem from="1627980312592" duration="3995000" />
+      <workItem from="1628005013656" duration="1705000" />
     </task>
     <servers />
   </component>
@@ -258,38 +263,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627917522753" />
-    <state width="1877" height="249" key="GridCell.Tab.0.bottom" timestamp="1627918143477">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1628006721459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627918143477" />
-    <state width="1877" height="249" key="GridCell.Tab.0.center" timestamp="1627918143477">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1628006721459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627918143477" />
-    <state width="1877" height="249" key="GridCell.Tab.0.left" timestamp="1627918143477">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1628006721459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627918143477" />
-    <state width="1877" height="249" key="GridCell.Tab.0.right" timestamp="1627918143477">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1628006721459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627918143477" />
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom" timestamp="1627745494849">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1628006721460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627745494849" />
-    <state width="1293" height="282" key="GridCell.Tab.1.center" timestamp="1627745494849">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721460" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1628006721459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627745494849" />
-    <state width="1293" height="282" key="GridCell.Tab.1.left" timestamp="1627745494849">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1628006721459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627745494849" />
-    <state width="1293" height="282" key="GridCell.Tab.1.right" timestamp="1627745494849">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1628006721460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="282" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627745494849" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721460" />
     <state width="1293" height="282" key="GridCell.Tab.2.bottom" timestamp="1627745494849">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,10 +311,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1293" height="282" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627745494849" />
-    <state x="463" y="164" key="SettingsEditor" timestamp="1627917513333">
+    <state x="463" y="164" key="SettingsEditor" timestamp="1628005275989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627917513333" />
+    <state x="463" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628005275989" />
     <state x="334" y="223" key="new project wizard" timestamp="1627643920123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -329,5 +334,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="com.poratu.idea.plugins.tomcat">
+        <watch expression="userInfo" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
