@@ -1,21 +1,19 @@
 package com.adk.ssm.domain;
 
-import org.springframework.security.core.userdetails.User;
-
 import java.util.List;
 
 public class Role {
     private String id;
     private String roleName;
     private String roleDesc;
-    private List<Permission> permissions;
+    private List<Permissions> permissions;
     private List<UserInfo> users;
 
-    public List<Permission> getPermissions() {
+    public List<Permissions> getPermissions() {
         return permissions;
     }
 
-    public void setPermissions(List<Permission> permissions) {
+    public void setPermissions(List<Permissions> permissions) {
         this.permissions = permissions;
     }
 

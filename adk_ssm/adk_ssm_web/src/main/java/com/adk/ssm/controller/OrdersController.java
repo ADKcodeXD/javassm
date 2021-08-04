@@ -21,7 +21,6 @@ public class OrdersController {
     @RequestMapping("/findAll.do")
     public ModelAndView findAll(@RequestParam(name = "page",defaultValue = "1") int page,@RequestParam(name = "pagesize",defaultValue = "4") int pagesize) throws Exception{
         List<Orders> ordersList=ordersService.findAll(page,pagesize);
-        System.out.println(ordersList);
         PageInfo pageInfo = new PageInfo(ordersList);
         ModelAndView mv=new ModelAndView();
         //通过pageinfo来封装orderlist

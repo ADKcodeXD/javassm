@@ -3,7 +3,37 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.adk.ssm.dao.UserMapper">
-    <select id="findByUsername" resultType="com.adk.ssm.domain.UserInfo">
+    <resultMap id="UserMap" type="com.adk.ssm.domain.UserInfo">
+        <result column="id" property="id"></result>
+        <result column="email" property="email"></result>
+        <result column="username" property="username"></result>
+        <result column="password" property="password"></result>
+        <result column="phoneNum" property="phoneNum"></result>
+        <result column="status" property="status"></result>
+        <collection property="roles"
+                    column="id"
+                    ofType="com.adk.ssm.domain.Role"
+                    select="com.adk.ssm.dao.RoleMapper.findByUserId">
+        </collection>
+    </resultMap>
+    <select id="findByUsername" resultMap="UserMap">
         select * from user where username=#{username}
     </select>
+
+    <select id="findById" resultMap="UserMap">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="findByRoleId" resultMap="UserMap">
+        select * from user where id in (select userId from role_user where id=#{id})
+    </select>
+
+    <select id="findAll" resultType="com.adk.ssm.domain.UserInfo">
+        select * from user
+    </select>
+
+    <insert id="addUser" parameterType="com.adk.ssm.domain.UserInfo">
+        INSERT  into user(id,email,username,password,phoneNum,status)
+        values (#{id},#{email},#{username},#{password},#{phoneNum},#{status})
+    </insert>
 </mapper>

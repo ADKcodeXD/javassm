@@ -47,7 +47,7 @@
 
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-book"></i> <span>系统管理</span>
+                    <i class="fa fa-book"></i> <span>系统信息</span>
                     <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -55,8 +55,8 @@
                 <ul class="treeview-menu">
 
                     <li id="travellog-manage">
-                        <a href="all-travellog-manage-list.html">
-                            <i class="fa fa-circle-o"></i> 人员管理
+                        <a href="/user/findAll.do">
+                            <i class="fa fa-circle-o"></i> 用户管理
                         </a>
                     </li>
 
@@ -78,7 +78,7 @@
 
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-cogs"></i> <span>基础信息</span>
+                    <i class="fa fa-cogs"></i> <span>产品信息管理</span>
                     <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
                     </span>

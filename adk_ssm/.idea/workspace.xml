@@ -31,8 +31,8 @@
       <list>
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -61,7 +61,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/adk_ssm_dao/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23564065" />
@@ -69,14 +69,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code 练习\Java\javassm\adk_ssm\adk_ssm_dao\src\main\resources" />
+      <recent name="D:\Code 练习\Java\javassm\adk_ssm\adk_ssm_dao\src\main\java\com\adk\ssm\dao" />
+      <recent name="D:\Code 练习\Java\javassm\adk_ssm\adk_ssm_web\src\main\webapp\pages" />
       <recent name="D:\Code 练习\Java\adk_ssm\adk_ssm_dao\src\main\java\com\adk\ssm\dao" />
       <recent name="D:\Code 练习\Java\adk_ssm\adk_ssm_web\src\main\webapp" />
-      <recent name="D:\Code 练习\Java\adk_ssm\adk_ssm_web\src\main\webapp\pages" />
-      <recent name="D:\Code 练习\Java\adk_ssm\adk_ssm_web\src\main\webapp\WEB-INF" />
-      <recent name="D:\Code 练习\Java\adk_ssm\adk_ssm_web\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Smart Tomcat.smtomcat">
+    <configuration name="Testmybatis.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adk_ssm_dao" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Testmybatis" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/adk_ssm_web_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -193,7 +203,13 @@
     <list>
       <item itemvalue="Smart Tomcat.smtomcat" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.41" />
+      <item itemvalue="JUnit.Testmybatis.test1" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Testmybatis.test1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -228,6 +244,7 @@
       <workItem from="1627899045269" duration="11026000" />
       <workItem from="1627980312592" duration="3995000" />
       <workItem from="1628005013656" duration="1705000" />
+      <workItem from="1628047892732" duration="20599000" />
     </task>
     <servers />
   </component>
@@ -235,10 +252,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="181" key="#Project_Structure" timestamp="1627714221454">
+    <state x="552" y="181" key="#Project_Structure" timestamp="1628073829146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="181" key="#Project_Structure/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627714221454" />
+    <state x="552" y="181" key="#Project_Structure/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628073829146" />
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627698272280">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -247,10 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627658393260" />
-    <state x="765" y="212" key="#com.intellij.ide.util.MemberChooser" timestamp="1627981693361">
+    <state x="765" y="212" key="#com.intellij.ide.util.MemberChooser" timestamp="1628065398521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="212" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627981693361" />
+    <state x="765" y="212" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628065398521" />
     <state x="690" y="269" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1627742879539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,22 +280,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627917522753" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1628006721459">
+    <state width="1877" height="249" key="GridCell.Tab.0.bottom" timestamp="1628082003295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1628006721459">
+    <state width="1877" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628082003295" />
+    <state width="1877" height="249" key="GridCell.Tab.0.center" timestamp="1628082003294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1628006721459">
+    <state width="1877" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628082003294" />
+    <state width="1877" height="249" key="GridCell.Tab.0.left" timestamp="1628082003294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1628006721459">
+    <state width="1877" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628082003294" />
+    <state width="1877" height="249" key="GridCell.Tab.0.right" timestamp="1628082003294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628006721459" />
+    <state width="1877" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628082003294" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1628006721460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -319,10 +336,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="223" key="new project wizard/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627643920123" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1627905319302">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1628055114642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1627905319302" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1628055114642" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
