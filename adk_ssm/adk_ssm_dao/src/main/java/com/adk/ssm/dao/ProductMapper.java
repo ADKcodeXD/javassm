@@ -1,5 +1,6 @@
 package com.adk.ssm.dao;
 
+import com.adk.ssm.domain.Permissions;
 import com.adk.ssm.domain.Product;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
@@ -11,4 +12,5 @@ import java.util.List;
 public interface ProductMapper {
     public List<Product> findAll() throws Exception;
     void addProduct(Product product);
+
 }

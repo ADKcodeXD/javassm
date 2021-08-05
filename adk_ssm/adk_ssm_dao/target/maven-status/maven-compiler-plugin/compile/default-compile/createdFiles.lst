@@ -1,0 +1,5 @@
+com\adk\ssm\dao\ProductMapper.class
+com\adk\ssm\dao\UserMapper.class
+com\adk\ssm\dao\OrdersMapper.class
+com\adk\ssm\dao\PermissionsMapper.class
+com\adk\ssm\dao\RoleMapper.class

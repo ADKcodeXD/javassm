@@ -36,5 +36,20 @@
         select * from role where id in (select roleId from role_permissions where permissionsId=#{id})
     </select>
 
+    <insert id="addRole" parameterType="com.adk.ssm.domain.Role">
+        insert into role(id,roleName,roleDesc)
+        values (#{id},#{roleName},#{roleDesc})
+    </insert>
 
+    <delete id="deleteFromrole_user">
+        delete from role_user where roleId=#{id}
+    </delete>
+
+    <delete id="deleteFromrole_permissions">
+        delete from role_permissions where roleId=#{id}
+    </delete>
+
+    <delete id="deleteById">
+        delete from role where id=#{id}
+    </delete>
 </mapper>
