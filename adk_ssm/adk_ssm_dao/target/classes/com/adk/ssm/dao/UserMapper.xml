@@ -36,4 +36,13 @@
         INSERT  into user(id,email,username,password,phoneNum,status)
         values (#{id},#{email},#{username},#{password},#{phoneNum},#{status})
     </insert>
+
+    <select id="findOtherRoles" resultMap="com.adk.ssm.dao.RoleMapper.RoleMap">
+        select * from role where id not in (select roleId from role_user where userId=#{userId})
+    </select>
+
+    <insert id="addRoleToUser">
+        insert into role_user(roleId,userId)
+        values (#{roleId},#{userId})
+    </insert>
 </mapper>

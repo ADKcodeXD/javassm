@@ -137,7 +137,7 @@
 											<td>${permission.permissionsName }</td>
 											<td>${permission.url }</td>
 											<td class="text-center">
-												<a href="${pageContext.request.contextPath}/role/deletePermissionById.do?permissionId=${permission.id}&roleId=${role.id}" class="btn bg-olive btn-xs" onclick="deletesuccess()">删除资源权限</a>
+												<a href="${pageContext.request.contextPath}/role/deletePermissionsById.do?permissionsId=${permission.id}&roleId=${role.id}" class="btn bg-olive btn-xs" onclick="deletesuccess()">删除资源权限</a>
 											</td>
 										</tr>
 									</c:forEach>

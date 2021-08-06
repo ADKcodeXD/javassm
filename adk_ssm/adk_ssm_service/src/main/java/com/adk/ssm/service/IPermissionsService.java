@@ -9,4 +9,5 @@ public interface IPermissionsService {
     public void addPermissions(Permissions permissions);
     public Permissions findById(String id);
     public void deletePermissionsById(String id);
+    public void deleteRoleById(String pid,String rid);
 }

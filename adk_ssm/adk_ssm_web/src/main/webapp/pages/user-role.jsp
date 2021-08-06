@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
 	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>数据 - AdminLTE2定制版</title>
+<title>给用户添加角色</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -103,31 +103,9 @@
 
 						<!-- 数据表格 -->
 						<div class="table-box">
-
-<%--							<!--工具栏-->--%>
-<%--							<div class="pull-left">--%>
-<%--								<div class="form-group form-inline">--%>
-<%--									<div class="btn-group">--%>
-<%--										<button type="button" class="btn btn-default" title="新建" onclick="location.href='${pageContext.request.contextPath}/pages/role-add.jsp'">--%>
-<%--											<i class="fa fa-file-o"></i> 新建角色--%>
-<%--										</button>--%>
-<%--										--%>
-<%--										<button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload()">--%>
-<%--											<i class="fa fa-refresh"></i> 刷新--%>
-<%--										</button>--%>
-<%--									</div>--%>
-<%--								</div>--%>
-<%--							</div>--%>
-<%--							<div class="box-tools pull-right">--%>
-<%--								<div class="has-feedback">--%>
-<%--									<input type="text" class="form-control input-sm"--%>
-<%--										placeholder="搜索"> <span--%>
-<%--										class="glyphicon glyphicon-search form-control-feedback"></span>--%>
-<%--								</div>--%>
-<%--							</div>--%>
-<%--							<!--工具栏/-->--%>
-
+						<form action="${pageContext.request.contextPath}/user/addRoleToUser.do" method="post">
 							<!--数据列表-->
+							<input type="hidden" name="userId" value="${user.id}">
 							<table id="dataList"
 								class="table table-bordered table-striped table-hover dataTable">
 								<thead>
@@ -142,33 +120,25 @@
 									</tr>
 								</thead>
 								<tbody>
-
 									<c:forEach items="${roleList}" var="role">
 										<tr>
-											<td><input name="ids" type="checkbox"></td>
-											<td>${role.id }</td>
+											<td><input name="ids" type="checkbox" value="${role.id}"></td>
+											<td>${role.id}</td>
 											<td>${role.roleName }</td>
-											<td>${role.roleDesc }</td>																				
-											<td class="text-center">
-												<a href="${pageContext.request.contextPath}/user/relatedRole.do?id=${user.id}" class="btn bg-olive btn-xs">添加此权限</a>
-											</td>
+											<td>${role.roleDesc }</td>
 										</tr>
 									</c:forEach>
 								</tbody>
-								<!--
-                            <tfoot>
-                            <tr>
-                            <th>Rendering engine</th>
-                            <th>Browser</th>
-                            <th>Platform(s)</th>
-                            <th>Engine version</th>
-                            <th>CSS grade</th>
-                            </tr>
-                            </tfoot>-->
 							</table>
-							<!--数据列表/-->
+							<div class="box-tools text-center">
+								<button type="submit" class="btn bg-maroon">添加</button>
+								<button type="button" class="btn bg-default"
+										onclick="history.back(-1);">返回</button>
+							</div>
+						</form>
 
 						</div>
+
 						<!-- 数据表格 /-->
 
 					</div>
@@ -185,13 +155,7 @@
 			<!-- 内容区域 /-->
 
 			<!-- 底部导航 -->
-			<footer class="main-footer">
-			<div class="pull-right hidden-xs">
-				<b>Version</b> 1.0.8
-			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-			</strong> All rights reserved. </footer>
+			<jsp:include page="footer.jsp"></jsp:include>
 			<!-- 底部导航 /-->
 
 		</div>

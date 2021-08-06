@@ -66,5 +66,17 @@ public class UserServiceImpl implements IUserService{
 
     }
 
+    @Override
+    public List<Role> findOtherRoles(String userId) {
+        return userMapper.findOtherRoles(userId);
+    }
+
+    @Override
+    public void addRoleToUser(String userId, String[] roleIds) {
+        for (String roleId : roleIds) {
+            userMapper.addRoleToUser(userId,roleId);
+        }
+    }
+
 
 }

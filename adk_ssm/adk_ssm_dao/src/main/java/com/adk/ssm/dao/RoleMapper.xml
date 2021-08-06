@@ -52,4 +52,17 @@
     <delete id="deleteById">
         delete from role where id=#{id}
     </delete>
+
+    <select id="findUserByIdAndAllRole" resultMap="com.adk.ssm.dao.PermissionsMapper.PermissionsMap" >
+        select * from permissions where id not in (select permissionsId from role_permissions where roleId=#{id})
+    </select>
+
+    <delete id="deletePermissionsById">
+        delete from role_permissions where roleId=#{rid} and permissionsId=#{pid}
+    </delete>
+
+    <insert id="addPermissions" >
+        insert into role_permissions(roleId,permissionsId)
+        values(#{rid},#{pid})
+    </insert>
 </mapper>

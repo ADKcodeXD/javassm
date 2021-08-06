@@ -109,8 +109,6 @@
 							<input type="text" class="form-control" name="roleDesc"
 								placeholder="角色描述" value="">
 						</div>
-										
-
 					</div>
 				</div>
 				<!--订单信息/--> <!--工具栏-->

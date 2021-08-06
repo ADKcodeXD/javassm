@@ -38,4 +38,8 @@
     <delete id="deletePermissionsById">
         delete from permissions where id=#{id}
     </delete>
+
+    <delete id="deleteRoleById">
+        delete from role_permissions where permissionsId=#{pid} and roleId=#{rid}
+    </delete>
 </mapper>

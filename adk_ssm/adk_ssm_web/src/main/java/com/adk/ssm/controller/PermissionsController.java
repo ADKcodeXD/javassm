@@ -49,4 +49,10 @@ public class PermissionsController {
         permissionsService.deletePermissionsById(permissionsId);
         return "redirect:findAll.do";
     }
+
+    @RequestMapping("deleteRoleById.do")
+    public String deleteRoleById(@RequestParam(value = "permissionsId")String permissionsId,@RequestParam(value = "roleId")String roleId){
+        permissionsService.deleteRoleById(permissionsId,roleId);
+        return "redirect:findAll.do";
+    }
 }

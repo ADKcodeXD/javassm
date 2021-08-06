@@ -1,5 +1,6 @@
 package com.adk.ssm.controller;
 
+import com.adk.ssm.domain.Permissions;
 import com.adk.ssm.domain.Role;
 import com.adk.ssm.domain.UserInfo;
 import com.adk.ssm.service.IRoleService;
@@ -49,4 +50,28 @@ public class RoleController {
         return "redirect:findAll.do";
     }
 
+    @RequestMapping("findUserByIdAndAllRole.do")
+    public ModelAndView findUserByIdAndAllRole(@RequestParam(value = "id")String id){
+        List<Permissions> permissions = roleService.findUserByIdAndAllRole(id);
+        Role role=roleService.findById(id);
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("permissions",permissions);
+        mv.addObject("role",role);
+        mv.setViewName("role-addpermission");
+        return mv;
+    }
+
+    @RequestMapping("deletePermissionsById.do")
+    public String deletePermissionsById(@RequestParam(value = "permissionsId")String permissionsId,@RequestParam(value = "roleId") String roleId){
+        roleService.deletePermissionsById(permissionsId,roleId);
+        String str="redirect:findById.do"+"?id="+roleId;
+        return str;
+    }
+
+    @RequestMapping("addPermissions.do")
+    public String addPermissions(@RequestParam(value = "ids") String [] ids,@RequestParam(value = "roleId")String roleId){
+        roleService.addPermissions(ids,roleId);
+        String str="redirect:findById.do"+"?id="+roleId;
+        return str;
+    }
 }

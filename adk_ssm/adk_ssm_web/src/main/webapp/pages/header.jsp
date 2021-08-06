@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <html>
 <body>
 <header class="main-header">
@@ -42,8 +43,7 @@
                             <img src="${pageContext.request.contextPath}/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                             <p>
-                                张猿猿 - 数据管理员
-                                <small>最后登录 11:20AM</small>
+                                <security:authentication property="principal.username"></security:authentication>
                             </p>
                         </li>
                         <!-- Menu Body

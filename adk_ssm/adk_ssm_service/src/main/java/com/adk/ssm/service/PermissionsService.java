@@ -39,5 +39,10 @@ public class PermissionsService implements IPermissionsService {
         permissionsMapper.deletePermissionsById(id);
     }
 
+    @Override
+    public void deleteRoleById(String pid, String rid) {
+        permissionsMapper.deleteRoleById(pid, rid);
+    }
+
 
 }

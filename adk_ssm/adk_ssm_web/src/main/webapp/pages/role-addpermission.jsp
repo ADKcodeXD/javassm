@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
 		 pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
@@ -62,25 +62,7 @@
 
 
 
-	<!-- jQuery 2.2.3 -->
-	<!-- jQuery UI 1.11.4 -->
-	<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-	<!-- Bootstrap 3.3.6 -->
-	<!-- Morris.js charts -->
-	<!-- Sparkline -->
-	<!-- jvectormap -->
-	<!-- jQuery Knob Chart -->
-	<!-- daterangepicker -->
-	<!-- datepicker -->
-	<!-- Bootstrap WYSIHTML5 -->
-	<!-- Slimscroll -->
-	<!-- FastClick -->
-	<!-- iCheck -->
-	<!-- AdminLTE App -->
-	<!-- 表格树 -->
-	<!-- select2 -->
-	<!-- bootstrap color picker -->
-	<!-- bootstrap time picker -->
+
 	<!--<script src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/timepicker/bootstrap-timepicker.min.js"></script>-->
 	<!-- Bootstrap WYSIHTML5 -->
 	<!--bootstrap-markdown-->
@@ -204,6 +186,7 @@
 						<!--工具栏/-->
 
 						<!--数据列表-->
+						<form method="post" action="${pageContext.request.contextPath}/role/addPermissions.do">
 						<table id="dataList"
 							   class="table table-bordered table-striped table-hover dataTable">
 							<thead>
@@ -214,39 +197,29 @@
 								<th class="sorting_asc">ID</th>
 								<th class="sorting_desc">资源名称</th>
 								<th class="sorting_asc sorting_asc_disabled">资源权限</th>
-
 							</tr>
 							</thead>
 							<tbody>
-
-
-							<c:forEach items="${permissions}" var="permission">
-
+							<input type="hidden" value="${role.id}" name="roleId">
+							<c:forEach items="${permissions}" var="permissions">
 								<tr>
-									<td><input name="ids" type="checkbox"></td>
-									<td>${permissions.id }</td>
-									<td>${permissions.permissionName }</td>
-									<td>${permissions.url }</td>
-									<td class="text-center">
-										<c:forEach items="${role}" var="role">
-										<a href="${pageContext.request.contextPath}/role/addpermission.do?permissionId=${permission.id}&roleId=${role.id}" onclick="success()" class="btn bg-olive btn-xs">添加此资源权限</a>
-										</c:forEach>
-									</td>
-
+									<td><input name="ids" type="checkbox" value="${permissions.id}"></td>
+									<td>${permissions.id}</td>
+									<td>${permissions.permissionsName}</td>
+									<td>${permissions.url}</td>
+<%--									<td class="text-center">--%>
+<%--										<a href="${pageContext.request.contextPath}/role/addPermissions.do?permissionsId=${permissions.id}&roleId=${role.id}" onclick="success()" class="btn bg-olive btn-xs">添加此资源权限</a>--%>
+<%--									</td>--%>
 								</tr>
 							</c:forEach>
 							</tbody>
-							<!--
-                        <tfoot>
-                        <tr>
-                        <th>Rendering engine</th>
-                        <th>Browser</th>
-                        <th>Platform(s)</th>
-                        <th>Engine version</th>
-                        <th>CSS grade</th>
-                        </tr>
-                        </tfoot>-->
 						</table>
+							<div class="box-tools text-center">
+								<button type="submit" class="btn bg-maroon">添加</button>
+								<button type="button" class="btn bg-default"
+										onclick="history.back(-1);">返回</button>
+							</div>
+						</form>
 						<!--数据列表/-->
 
 
@@ -257,27 +230,16 @@
 				</div>
 				<!-- /.box-body -->
 
-
-
-
 			</div>
 
 		</section>
 		<!-- 正文区域 /-->
 
 	</div>
-	<!-- @@close -->
 	<!-- 内容区域 /-->
 
 	<!-- 底部导航 -->
-	<footer class="main-footer">
-		<div class="pull-right hidden-xs">
-			<b>Version</b> 1.0.8
-		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved.
-	</footer>
+	<jsp:include page="footer.jsp"></jsp:include>
 	<!-- 底部导航 /-->
 
 </div>
