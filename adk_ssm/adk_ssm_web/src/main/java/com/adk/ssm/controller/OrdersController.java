@@ -19,7 +19,7 @@ public class OrdersController {
     private IOrdersService ordersService;
 
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll(@RequestParam(name = "page",defaultValue = "1") int page,@RequestParam(name = "pagesize",defaultValue = "4") int pagesize) throws Exception{
+    public ModelAndView findAll(@RequestParam(name = "page",defaultValue = "1") Integer page,@RequestParam(name = "pagesize",defaultValue = "4") Integer pagesize) throws Exception{
         List<Orders> ordersList=ordersService.findAll(page,pagesize);
         PageInfo pageInfo = new PageInfo(ordersList);
         ModelAndView mv=new ModelAndView();

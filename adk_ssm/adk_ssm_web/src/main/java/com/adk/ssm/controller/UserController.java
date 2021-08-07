@@ -24,7 +24,7 @@ public class UserController {
     private IUserService userService;
 
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll(@RequestParam(value = "page",defaultValue = "1")int page,@RequestParam(value = "pagesize",defaultValue = "4")int pagesize){
+    public ModelAndView findAll(@RequestParam(value = "page",defaultValue = "1")Integer page,@RequestParam(value = "pagesize",defaultValue = "4")Integer pagesize){
         List<UserInfo> userInfoList=userService.findAll(page,pagesize);
         PageInfo userList = new PageInfo(userInfoList);
         ModelAndView mv =new ModelAndView();

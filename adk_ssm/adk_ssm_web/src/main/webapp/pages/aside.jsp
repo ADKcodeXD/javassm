@@ -73,6 +73,12 @@
                         </a>
                     </li>
 
+                    <li id="log-guanli">
+                        <a href="/sysLog/findAll.do">
+                            <i class="fa fa-circle-o"></i> 日志管理
+                        </a>
+                    </li>
+
                 </ul>
             </li>
 

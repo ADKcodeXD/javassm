@@ -135,6 +135,7 @@ public class Orders {
 
 
     public int getPayType() {
+
         return payType;
     }
 
@@ -143,13 +144,10 @@ public class Orders {
     }
 
     public String getPayTypeStr() {
-
         if(payType==1){
             payTypeStr="微信支付";
         }else if(payType==2){
             payTypeStr="支付宝支付";
-        }else {
-            payTypeStr="未支付";
         }
         return payTypeStr;
     }
