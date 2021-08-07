@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>数据 - AdminLTE2定制版 | Log in</title>
+<title>登录</title>
 
 <meta
 	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
@@ -24,10 +24,14 @@
 	href="${pageContext.request.contextPath}/plugins/iCheck/square/blue.css">
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="
+background-image: url('img/IMG_20181103_020347.jpg');
+width: 100%;
+height: 100%;
+" >
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="all-admin-index.html"><b>ITCAST</b>后台管理系统</a>
+			<a href="all-admin-index.html" style="color: whitesmoke"><b>ADKssm</b>后台管理系统</a>
 		</div>
 		<!-- /.login-logo -->
 		<div class="login-box-body">
